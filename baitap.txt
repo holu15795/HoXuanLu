@@ -1,0 +1,52 @@
+cau 1:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+	<h1>abc</h1>
+	<div>
+		<h1>div-1</h1>
+    	<h1>div-2</h1>
+	</div>
+	<h1>xyz</h1>
+    <div onclick="checkAll()"> Click me To See Change</div>
+
+</body>
+<script>
+function checkAll() {
+var divs = document.getElementsByTagName("h1");  
+
+for(var i = 1; i < divs.length-1; i++) {  
+  var div = divs[i];                     
+  div.style.color = 'green';             
+}
+}
+</script>
+</html>
+
+cau2:
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+	<a href="" id="myLink()">google</a>
+    
+</body>
+
+<script>
+function changeLink(){
+    setTimeout(function() {
+        var link = document.getElementById("myLink");
+        link.setAttribute('href', "http://hutech.edu.vn");
+        document.getElementById("mylink").innerHTML = "Truong Dai Hoc Cong Nghe TP.HCM";
+    }, 100);
+}
+</script>
+</html>
+
